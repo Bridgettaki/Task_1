@@ -1,88 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
-    <ul>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="about.html">About me</a></li>
-        <li><a href="index.html">Home</a></li>
-        <li style="float:left"><a class="active" href="logo">logo</a></li>
+
+  <!-- Navigation -->
+  <nav>
+    <ul class="navbar">
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About me</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li style="float:left"><a class="active" href="index.html">Logo</a></li>
     </ul>
+  </nav>
 
-    <div class="ffbox">
-        <div class="ffbox1">
-            <h1 class="gfg">Contact Bridget </h1>
-            <form>
-                <label for="fullName">
-                    <i class="fa fa-solid fa-user" 
-                       style="margin: 2px;">
-                    </i> Full Name:
-                </label>
-                <input type="text" 
-                       id="fullName" 
-                       name="Name" required>
+  <!-- Contact Form Section -->
+  <div class="ffbox">
+    <div class="ffbox1">
+      <h1 class="gfg">Contact Bridget</h1>
+      <form>
+        <label for="fullName"><i class="fa fa-user"></i> Full Name:</label>
+        <input type="text" id="fullName" name="Name" required>
 
-                <label for="email">
-                    <i class="fa fa-solid fa-envelope" 
-                       style="margin: 2px;">
-                    </i>
-                    Email:
+        <label for="email"><i class="fa fa-envelope"></i> Email:</label>
+        <input type="email" id="email" name="email" required>
 
-                </label>
-                <input type="email"
-                       id="email" 
-                       name="email" required>
+        <label for="mobile"><i class="fa fa-phone"></i> Contact details:</label>
+        <input type="tel" id="mobile" name="mobile" required>
 
-                <label for="mobile">
-                    <i class=" fa fa-solid fa-phone" 
-                       style="margin: 2px;">
-                    </i>
-                    Contact details:
-                </label>
-                <input type="tel"
-                       id="mobile" 
-                       name="mobile" required>
+        <label for="msg"><i class="fa fa-comment"></i> Write Message:</label>
+        <textarea id="msg" name="msg" rows="5" required></textarea>
 
-                <label for="msg">
-                    <i class=" fa fa-solid fa-comment" 
-                       style="margin: 2px;">
-                    </i>
-                    Write Message:
-                </label>
-                <textarea id="msg" 
-                          name="msg" 
-                          rows="5" required>
-                </textarea>
-
-                <button type="submit">
-                    Send
-                </button>
-            </form>
-        </div>
-        <div class="map-div">
-            <iframe src= https://www.google.com/maps/place/Roodekop+139-Ir,+Germiston/@-26.2851913,28.161197,14z/data=!3m1!4b1!4m6!3m5!1s0x1e951a59d02815bb:0x7382da4fba3b138d!8m2!3d-26.2870394!4d28.1503026!16s%2Fg%2F1w02h05j?entry=ttu&g_ep=EgoyMDI1MDQyMS4wIKXMDSoASAFQAw%3D%3D  
-                    width="370" 
-                    height="95%" 
-                    allowfullscreen="" 
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </div>
+        <button type="submit">Send</button>
+      </form>
     </div>
-</body>
 
+    <!-- Google Map Section -->
+    <div class="map-div">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14317.662662560384!2d28.1503026!3d-26.2870394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e951a59d02815bb%3A0x7382da4fba3b138d!2sRoodekop%20139-Ir%2C%20Germiston!5e0!3m2!1sen!2sza!4v1713969555946"
+        width="100%"
+        height="100%"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+
+  <section id="footer">
+    <div class="main-footer">
+      <div class="logoinfo">
+        <div class="contact-details">
+          <h1>Contact me on</h1>
+          <ul>
+            <li><i class="fa fa-phone"></i><a href="tel:+91">+27 (69) 187 4631</a></li>
+            <li><i class="fa fa-envelope"></i><a href="mailto:yourmail@gmail.com">takalanibridget@icloud.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="com">
+        <h1>About</h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="info">
+        <h1>Social Media</h1>
+        <div class="sociallogos">
+          <div class="logobox">
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="https://www.linkedin.com/in/takalani-bridget-sibanda/" class="fab fa-linkedin"></a>
+            <a href="https://github.com/Bridgettaki" class="fab fa-github"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>Takalani Sibanda ©All Rights Reserved</footer>
+  </section>
+
+</body>
 </html>
+
 
 
 
   
-
-
-    
-</body>
-</html>
