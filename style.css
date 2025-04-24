@@ -21,3 +21,8 @@ ul {
   li a:hover {
     background-color: #111;
   }
+img {
+  float: right;
+  border: 1px dotted black;
+  margin: 0px 0px 15px 20px;
+}
